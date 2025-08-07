@@ -1,7 +1,7 @@
 {
-  "name": "automation",
+  "name": "cypressautomation",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cypress Automation framework",
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run",
@@ -17,7 +17,7 @@
       "output": "cypress/cucumberReports/results.json"
     }
   },
-  "author": "RahulShetty",
+  "author": "Mayuri Agasti",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.17.0",
