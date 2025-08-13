@@ -36,3 +36,11 @@ When('I logged in to the portal', function(dataTable){
     this.productPage.productPageValidations()
     this.productPage.getCardCount().should('have.length', 4)
 });
+
+When ("I am able to login to application using valid credentials", function() {
+   this.productPage = homePage.login(this.data.userName, this.data.password)
+});
+
+When ("I verify I am on the Product page ", function(){
+   this.productPage.productPageValidations()  
+});

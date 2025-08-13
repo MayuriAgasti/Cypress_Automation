@@ -1,11 +1,12 @@
 class ConfirmationPage{
 
     submitFromDetails(){
-       cy.get('#country').type("India")
-        cy.wait(2000)
-        cy.get('.suggestions ul li a').click()
-        
-        cy.get('.btn-success').click()
+        cy.selectAutosuggestOption('#country','India')
+       //cy.get('#country').type("India")
+        //cy.wait(2000)
+        //cy.get('.suggestions ul li a').click()
+        cy.clickVisible('.btn-success');
+        //cy.get('.btn-success').click()
     }
 
     getAlertMessage(){

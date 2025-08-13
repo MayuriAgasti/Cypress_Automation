@@ -1,4 +1,6 @@
 import ProductPage from "./productPage"
+import './../../support/commands'
+
 class HomePage {
 
     gotoUrl(url)
@@ -9,7 +11,7 @@ class HomePage {
     login(userName, password){
         cy.get("#username").type(userName)
         cy.get("#password").type(password)
-        cy.get("#signInBtn").click()
+        cy.clickVisible('#signInBtn')
 
         return new ProductPage()
     }
